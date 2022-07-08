@@ -1,0 +1,41 @@
+Arguments: 
+  D:\node\node.exe D:\vue\bin\yarn.js add [package]
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;D:\Git\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\node\;D:\vue\bin\;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\86176\AppData\Roaming\npm;C:\Users\86176\AppData\Local\gitkraken\bin;C:\Users\86176\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmmirror.com/[package]: [NOT_FOUND] [package] not found
+      at Request.params.callback [as _callback] (D:\vue\lib\cli.js:66097:18)
+      at Request.self.callback (D:\vue\lib\cli.js:140749:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (D:\vue\lib\cli.js:141721:10)
+      at Request.emit (node:events:527:28)
+      at Gunzip.<anonymous> (D:\vue\lib\cli.js:141643:12)
+      at Object.onceWrapper (node:events:641:28)
+      at Gunzip.emit (node:events:527:28)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
