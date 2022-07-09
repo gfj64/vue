@@ -94,6 +94,7 @@
 import moment from "moment";
 
 export default {
+  // 变量属性
   data() {
     return {
       form: {
@@ -112,7 +113,7 @@ export default {
       list:JSON.parse(localStorage.getItem('list')) || []
     };
   },
-  //   处理时间
+  //   处理时间  过滤器
    filters: {
     formatDate(value) {
       //  这里是用import中的
@@ -122,13 +123,13 @@ export default {
     },
   },
 
-// 缓存数据
+// 缓存数据 watch 侦听器
     watch: {
       // 由于需要在多个操作结束完成后，才去把新的list数据放到缓存 如果设置在多个方法后 会出现多余代码 且不移维护 通过监听的方式 当list列表发送变化时 去将整个list更新到缓存中
       "list": {
         deep: true,
         handler (newVal) {
-          // 将更新后的list数据放到缓存中
+          // 将更新后的list数据放到缓存中 stringify 串接
           // localStorage里面只能储存JSON字符串
           localStorage.setItem('list', JSON.stringify(newVal))
         }

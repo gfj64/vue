@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 侦听name值的变化 -->
        <input type="text" v-model="name" />
        <input type="text" v-model="obj.name" />
   </div>
@@ -17,8 +18,9 @@ export default {
   },
   /**
    *  watch: {
-   *    '被监听的属性名 （data中的属性 ，计算属性）' () {
-   *        执行函数
+   *    '被监听的属性名 （data中的属性 ，计算属性）'
+   *  () {
+   *        变量名对应的值改变这里函数方法自身触发
    *    }
    *  }
    */

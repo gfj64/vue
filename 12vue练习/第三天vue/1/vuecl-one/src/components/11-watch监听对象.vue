@@ -1,6 +1,7 @@
 <template>
   <div>
        <input type="text" v-model="obj.name" />
+       <input type="text" v-model="obj.age" />
   </div>
 </template>
 
@@ -8,9 +9,9 @@
 export default {
   data() {
     return {
-        name: '',
         obj: {
-            name: ''
+            name: '',
+            age: 0
         }
     };
   },
